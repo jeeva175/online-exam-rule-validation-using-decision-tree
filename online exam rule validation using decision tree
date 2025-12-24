@@ -1,0 +1,111 @@
+Project Overview
+
+Online examinations require strict monitoring to ensure fairness and prevent malpractice. This project implements a rule-based validation system using a Decision Tree approach to check whether a student’s online exam attempt is valid or violates any rules.
+
+The system evaluates multiple conditions such as login status, exam time validity, camera status, tab switching, and multiple logins before allowing or rejecting exam submission.
+
+🎯 Objectives
+
+To validate online exam rules automatically
+
+To detect rule violations in real time
+
+To allow or reject exam submission based on predefined conditions
+
+To demonstrate decision tree logic using C++
+
+🌳 Decision Tree Concept
+
+A Decision Tree is a flow of conditions where each node represents a rule and each branch represents a YES/NO decision.
+Based on student actions, the system navigates through the tree and reaches a final decision.
+
+🧩 Rules Considered
+
+Student must be logged in
+
+Exam must be within allowed time
+
+Camera must be ON
+
+Tab switching should not occur
+
+Multiple logins are not allowed
+
+🛠 Technologies Used
+
+Programming Language: C++
+
+Concepts Used:
+
+Conditional Statements (if-else)
+
+Boolean Logic
+
+Decision Trees
+
+Console-based Input/Output
+
+⚙️ Algorithm
+
+Start the program
+
+Check if the student is logged in
+
+Verify whether the exam time is valid
+
+Check if the camera is ON
+
+Detect tab switching
+
+Detect multiple logins
+
+Display result:
+
+Exam submitted successfully
+
+Rule violation detected
+
+Exam invalid
+
+▶️ How to Run
+
+Open any C++ compiler (Dev C++, Code::Blocks, VS Code, OnlineGDB)
+
+Copy the source code into a .cpp file
+
+Compile and run the program
+
+Enter inputs as 1 (Yes) or 0 (No) when prompted
+
+📌 Sample Output
+Is student logged in? (1 = Yes, 0 = No): 1
+Is exam time valid? (1 = Yes, 0 = No): 1
+Is camera ON? (1 = Yes, 0 = No): 1
+Has student switched tabs? (1 = Yes, 0 = No): 0
+Is multiple login detected? (1 = Yes, 0 = No): 0
+
+✅ Exam Submitted Successfully. No violations detected.
+
+✅ Advantages
+
+Simple and easy to understand
+
+Fast rule validation
+
+Easy to add new rules
+
+Suitable for academic projects
+
+🔮 Future Enhancements
+
+Integrate face detection for proctoring
+
+Store logs in a database
+
+Add AI-based cheating detection
+
+Convert to web-based application
+
+🏁 Conclusion
+
+This project successfully demonstrates how decision trees can be used to validate online exam rules efficiently. The approach ensures fairness, transparency, and automation in online examinations.
