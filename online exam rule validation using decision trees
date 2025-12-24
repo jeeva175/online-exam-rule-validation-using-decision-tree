@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    bool isLoggedIn;
+    bool isExamTimeValid;
+    bool cameraOn;
+    bool tabSwitched;
+    bool multipleLogin;
+
+    // Input from system (simulated)
+    cout << "Is student logged in? (1 = Yes, 0 = No): ";
+    cin >> isLoggedIn;
+
+    cout << "Is exam time valid? (1 = Yes, 0 = No): ";
+    cin >> isExamTimeValid;
+
+    cout << "Is camera ON? (1 = Yes, 0 = No): ";
+    cin >> cameraOn;
+
+    cout << "Has student switched tabs? (1 = Yes, 0 = No): ";
+    cin >> tabSwitched;
+
+    cout << "Is multiple login detected? (1 = Yes, 0 = No): ";
+    cin >> multipleLogin;
+
+    // Decision Tree Logic
+    if (!isLoggedIn) {
+        cout << "\n❌ Exam Invalid: Student not logged in.";
+    }
+    else if (!isExamTimeValid) {
+        cout << "\n❌ Exam Invalid: Exam time expired.";
+    }
+    else if (!cameraOn) {
+        cout << "\n⚠️ Rule Violation: Camera is OFF.";
+    }
+    else if (tabSwitched) {
+        cout << "\n⚠️ Rule Violation: Tab switching detected.";
+    }
+    else if (multipleLogin) {
+        cout << "\n❌ Exam Invalid: Multiple logins detected.";
+    }
+    else {
+        cout << "\n✅ Exam Submitted Successfully. No violations detected.";
+    }
+
+    return 0;
+}
